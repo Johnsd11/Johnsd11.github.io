@@ -83,10 +83,54 @@ body {
   line-height: var(--bs-body-line-height);
   color: var(--bs-body-color);
   text-align: var(--bs-body-text-align);
-  background-color: var(--bs-body-bg);
+  /*background-image: url('"../assets/img/background_boston.jpg"');
+  background-size: cover;   Adjusts the image size to cover the entire background
+  background-position: center;  *//* Centers the image *//*
+  background-repeat: no-repeat;  *//* Prevents the image from repeating */
+  /*background-color: var(--bs-body-bg);*/
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
+
+.aboutMe {
+    /*background: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 1) 40%, *//* Start with transparent white *//*
+        rgba(255, 255, 255, 0) 100% *//* End with opaque white *//*
+    ), url('../assets/img/boston_background_2.jpg'); *//* Your background image */
+    background:
+            linear-gradient(
+                to right,
+                rgba(255, 255, 255, 0) 12%, /* Solid white in the center */
+                rgba(255, 255, 255, 1) 15%, /* Fade to transparent */
+                rgba(255, 255, 255, 1) 85%, /* Fade back to transparent */
+                rgba(255, 255, 255, 0) 88%  /* Solid white on the right side */
+            ),
+            url('../assets/img/boston_background_2.jpg'); /* Your background image */
+    background-size: cover; /* or contain */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents repeating */
+    }
+
+.experience {
+    background: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 1) 40%, /* Start with transparent white */
+        rgba(255, 255, 255, 0) 100% /* End with opaque white */
+    ), url('../assets/img/boston_background_3.jpg'); /* Your background image */
+    background-size: cover; /* or contain */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents repeating */
+
+}
+
+/*
+    padding: 20px; */
+/* Optional: adds padding for better visual appearance */
+
+
+
+
 
 hr {
   margin: 1rem 0;
@@ -634,11 +678,11 @@ progress {
 .container-lg,
 .container-md,
 .container-sm {
-  width: 100%;
-  padding-right: var(--bs-gutter-x, 0.75rem);
-  padding-left: var(--bs-gutter-x, 0.75rem);
-  margin-right: auto;
-  margin-left: auto;
+    width: 100%;
+    padding-right: var(--bs-gutter-x, 0.75rem);
+    padding-left: var(--bs-gutter-x, 0.75rem);
+    margin-right: auto;
+    margin-left: auto;
 }
 
 @media (min-width: 576px) {
